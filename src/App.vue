@@ -9,7 +9,7 @@
         <li v-for="(item,i) in lists" :key="item.content">
           <el-divider></el-divider>
           <div class="content">
-            <el-checkbox v-model="item.checked" fill="#606266" text-color="#606266">{{item.content}}</el-checkbox>
+            <el-checkbox v-model="item.checked" @change="update()">{{item.content}}</el-checkbox>
             <i class="el-icon-delete" @click="dodelete(i)"></i>
           </div>
         </li>
@@ -96,6 +96,11 @@ export default {
         message: "添加待办成功",
         type: "success"
       });
+    },
+
+    //更新
+    update(content){
+      localStorage.setItem("lists", JSON.stringify(this.lists))
     }
   },
 

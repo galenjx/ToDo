@@ -12,3 +12,14 @@ npm run dev
 ```
 
 2. 或者直接以文件形式打开 ：双击运行下载好的dist/index.html文件，
+
+### 预览
+#### 移动端
+
+
+
+<img src="./someImg/mobile.jpg" width = "300"  align=center />
+
+#### pc端
+
+<img src="./someImg/pc.png" height = "300"  align=center />

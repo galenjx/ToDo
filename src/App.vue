@@ -99,7 +99,7 @@ export default {
     },
 
     //更新
-    update(content){
+    update(){
       localStorage.setItem("lists", JSON.stringify(this.lists))
     }
   },

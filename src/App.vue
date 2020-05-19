@@ -19,7 +19,7 @@
     <footer>
       <div class="content">
         <el-input v-model="input" placeholder="添加我的待办" @keyup.enter="add()"></el-input>
-        <el-button type="primary" @click="add()" size="mini">主要按钮</el-button>
+        <el-button type="primary" @click="add()" size="mini">添加</el-button>
       </div>
     </footer>
   </div>
